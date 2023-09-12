@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>SAWL</id>
+    <version>1.0.0.2</version>
+    <title>SAWL</title>
+    <authors>Faisal Andrabi</authors>
+    <description>Utility for creating Serilog Azure Blob Logs for COREWCF and other project types.</description>
+    <repository type="git" url="https://github.com/geekyfaisal/SAWL.git" />
+    <dependencies>
+      <group targetFramework="net6.0">
+        <dependency id="Serilog.AspNetCore" version="7.0.0" exclude="Build,Analyzers" />
+        <dependency id="Serilog.Sinks.AzureBlobStorage" version="3.0.3" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\Software\Codes\SAWL\SAWL\bin\Release\net6.0\SAWL.dll" target="lib\net6.0\SAWL.dll" />
+  </files>
+</package>

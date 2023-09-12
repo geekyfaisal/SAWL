@@ -898,7 +898,7 @@
           }
         }
       },
-      "SAWL/1.0.0": {
+      "SAWL/1.0.0.2": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
@@ -3094,7 +3094,7 @@
         "system.threading.timer.nuspec"
       ]
     },
-    "SAWL/1.0.0": {
+    "SAWL/1.0.0.2": {
       "type": "project",
       "path": "../SAWL/SAWL.csproj",
       "msbuildProject": "../SAWL/SAWL.csproj"
@@ -3102,7 +3102,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "SAWL >= 1.0.0"
+      "SAWL >= 1.0.0.2"
     ]
   },
   "packageFolders": {

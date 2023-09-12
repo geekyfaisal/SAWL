@@ -1,0 +1,12 @@
+D:\Software\Codes\SAWL\SAWL\bin\Release\net6.0\SAWL.deps.json
+D:\Software\Codes\SAWL\SAWL\bin\Release\net6.0\SAWL.dll
+D:\Software\Codes\SAWL\SAWL\bin\Release\net6.0\SAWL.pdb
+D:\Software\Codes\SAWL\SAWL\obj\Release\net6.0\SAWL.csproj.AssemblyReference.cache
+D:\Software\Codes\SAWL\SAWL\obj\Release\net6.0\SAWL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Software\Codes\SAWL\SAWL\obj\Release\net6.0\SAWL.AssemblyInfoInputs.cache
+D:\Software\Codes\SAWL\SAWL\obj\Release\net6.0\SAWL.AssemblyInfo.cs
+D:\Software\Codes\SAWL\SAWL\obj\Release\net6.0\SAWL.csproj.CoreCompileInputs.cache
+D:\Software\Codes\SAWL\SAWL\obj\Release\net6.0\SAWL.dll
+D:\Software\Codes\SAWL\SAWL\obj\Release\net6.0\refint\SAWL.dll
+D:\Software\Codes\SAWL\SAWL\obj\Release\net6.0\SAWL.pdb
+D:\Software\Codes\SAWL\SAWL\obj\Release\net6.0\ref\SAWL.dll

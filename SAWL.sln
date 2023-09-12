@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34003.232
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAWL", "SAWL\SAWL.csproj", "{E6740CE5-06F4-4081-A056-D2A46BEB6D1D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SAWL", "SAWL\SAWL.csproj", "{E6740CE5-06F4-4081-A056-D2A46BEB6D1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject", "TestProject\TestProject.csproj", "{13BAD781-A556-4C8F-9AB0-074F542AA5D3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{E6740CE5-06F4-4081-A056-D2A46BEB6D1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E6740CE5-06F4-4081-A056-D2A46BEB6D1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E6740CE5-06F4-4081-A056-D2A46BEB6D1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13BAD781-A556-4C8F-9AB0-074F542AA5D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13BAD781-A556-4C8F-9AB0-074F542AA5D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13BAD781-A556-4C8F-9AB0-074F542AA5D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13BAD781-A556-4C8F-9AB0-074F542AA5D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

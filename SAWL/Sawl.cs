@@ -5,7 +5,7 @@ using Serilog.Events;
 
 namespace SAWL
 {
-    public class Sawl<T> : ISawl<T> where T : class
+    public class Sawl<T> : ISawl
     {
         private Logger _logger;
 
@@ -30,7 +30,7 @@ namespace SAWL
                     storageFileName: $"{config.GetSection("logsettings: FileName").Value}{DateTime.Now.Year}{DateTime.Now.Day}.log",
                     storageContainerName: config.GetSection("logsettings:Storagecontainer").Value
                     ).CreateLogger();
-            _logger.Information("Testing");
+            //logger.Information("Testing");
             return logger;
         }
 
@@ -51,5 +51,24 @@ namespace SAWL
             _logger.Warning(message, propertyValue);
         }
 
+        public void Debug(string message)
+        {
+            _logger.Debug(message);
+        }
+
+        public void Error(string message)
+        {
+            _logger.Error(message);
+        }
+
+        public void Information(string message)
+        {
+            _logger.Information(message);
+        }
+
+        public void Warning(string message)
+        {
+            _logger.Warning(message);
+        }
     }
 }
