@@ -350,6 +350,9 @@
           "lib/netstandard1.0/_._": {}
         }
       },
+      "NuGet.CommandLine/6.7.0": {
+        "type": "package"
+      },
       "Serilog/2.12.0": {
         "type": "package",
         "compile": {
@@ -898,7 +901,7 @@
           }
         }
       },
-      "SAWL/1.0.0.2": {
+      "SAWL/1.0.0.4": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
@@ -1437,6 +1440,23 @@
         "microsoft.netcore.targets.1.0.1.nupkg.sha512",
         "microsoft.netcore.targets.nuspec",
         "runtime.json"
+      ]
+    },
+    "NuGet.CommandLine/6.7.0": {
+      "sha512": "oZtSPcngJ2ffhG1GHn0KbltXTRDpHf+ZP9pYebUjKDsAvzTcBGviqemxZsKpb1alZ5dRVFmZD4J0sEP8whEcEg==",
+      "type": "package",
+      "path": "nuget.commandline/6.7.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "NOTICES.txt",
+        "README.md",
+        "icon.png",
+        "nuget.commandline.6.7.0.nupkg.sha512",
+        "nuget.commandline.nuspec",
+        "tools/NuGet.exe",
+        "tools/NuGet.pdb"
       ]
     },
     "Serilog/2.12.0": {
@@ -3094,7 +3114,7 @@
         "system.threading.timer.nuspec"
       ]
     },
-    "SAWL/1.0.0.2": {
+    "SAWL/1.0.0.4": {
       "type": "project",
       "path": "../SAWL/SAWL.csproj",
       "msbuildProject": "../SAWL/SAWL.csproj"
@@ -3102,7 +3122,8 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "SAWL >= 1.0.0.2"
+      "NuGet.CommandLine >= 6.7.0",
+      "SAWL >= 1.0.0.4"
     ]
   },
   "packageFolders": {
@@ -3147,6 +3168,14 @@
     "frameworks": {
       "net6.0": {
         "targetAlias": "net6.0",
+        "dependencies": {
+          "NuGet.CommandLine": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[6.7.0, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
@@ -3163,7 +3192,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

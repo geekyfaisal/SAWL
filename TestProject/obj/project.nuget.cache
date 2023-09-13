@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "JMlRoiBLFl43eoWgeUFh+r3da+RbtSO7VXKRoXlaVhPyTCzdYJxkkmJWExVKBeazwg37oAOtT0CJ83uDAeZO4w==",
+  "dgSpecHash": "ypb80C3xJwptLFDAyTpzBBwpzJdIetohed3cpfPyeZw9JBq00LsR6dXVjZ7HmzLc7HU2aGdKIo+AC1+5DKVGaA==",
   "success": true,
   "projectFilePath": "D:\\Software\\Codes\\SAWL\\TestProject\\TestProject.csproj",
   "expectedPackageFiles": [
@@ -24,6 +24,7 @@
     "C:\\Users\\faisa\\.nuget\\packages\\microsoft.identity.client.extensions.msal\\2.18.4\\microsoft.identity.client.extensions.msal.2.18.4.nupkg.sha512",
     "C:\\Users\\faisa\\.nuget\\packages\\microsoft.netcore.platforms\\1.0.1\\microsoft.netcore.platforms.1.0.1.nupkg.sha512",
     "C:\\Users\\faisa\\.nuget\\packages\\microsoft.netcore.targets\\1.0.1\\microsoft.netcore.targets.1.0.1.nupkg.sha512",
+    "C:\\Users\\faisa\\.nuget\\packages\\nuget.commandline\\6.7.0\\nuget.commandline.6.7.0.nupkg.sha512",
     "C:\\Users\\faisa\\.nuget\\packages\\serilog\\2.12.0\\serilog.2.12.0.nupkg.sha512",
     "C:\\Users\\faisa\\.nuget\\packages\\serilog.aspnetcore\\7.0.0\\serilog.aspnetcore.7.0.0.nupkg.sha512",
     "C:\\Users\\faisa\\.nuget\\packages\\serilog.extensions.hosting\\7.0.0\\serilog.extensions.hosting.7.0.0.nupkg.sha512",

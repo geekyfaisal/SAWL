@@ -5,7 +5,7 @@ using Serilog.Events;
 
 namespace SAWL
 {
-    public class Sawl<T> : ISawl
+    public class Sawl : ISawl
     {
         private Logger _logger;
 
@@ -15,6 +15,8 @@ namespace SAWL
         }
         public Logger Createlogger()
         {
+
+            //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
             var builder = new ConfigurationBuilder()
             .SetBasePath(Directory.GetCurrentDirectory())
             .AddJsonFile("appsettings.json", optional: false);
@@ -22,12 +24,12 @@ namespace SAWL
             IConfiguration config = builder.Build();
 
             var logger = new LoggerConfiguration()
-                    .MinimumLevel.Information()
+                    .MinimumLevel.Debug()
                     .MinimumLevel.Override("Microsoft", LogEventLevel.Warning)
                     .MinimumLevel.Override("Microsoft.Hosting.Lifetime", LogEventLevel.Warning)
                     .WriteTo.AzureBlobStorage(
                     config.GetSection("logsettings:SerilogConnection").Value,
-                    storageFileName: $"{config.GetSection("logsettings: FileName").Value}{DateTime.Now.Year}{DateTime.Now.Day}.log",
+                    storageFileName: $"{config.GetSection("logsettings:FileName").Value}{DateTime.Now.Year}{DateTime.Now.Day}.log",
                     storageContainerName: config.GetSection("logsettings:Storagecontainer").Value
                     ).CreateLogger();
             //logger.Information("Testing");

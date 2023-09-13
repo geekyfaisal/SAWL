@@ -9,11 +9,12 @@ namespace TestProject
 {
     internal class CheckSawl
     {
-        private ISawl<CheckSawl> sawl = new Sawl<CheckSawl>();
+        private Sawl sawl = new Sawl();
 
         public void funtest()
         {
             sawl.Information("Welcome {0}", 1);
+            sawl.Debug("Why No Debuging");
         }
     }
 }
