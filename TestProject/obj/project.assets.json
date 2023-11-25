@@ -901,7 +901,7 @@
           }
         }
       },
-      "SAWL/1.0.0.4": {
+      "SAWL/1.0.0.6": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
@@ -3114,7 +3114,7 @@
         "system.threading.timer.nuspec"
       ]
     },
-    "SAWL/1.0.0.4": {
+    "SAWL/1.0.0.6": {
       "type": "project",
       "path": "../SAWL/SAWL.csproj",
       "msbuildProject": "../SAWL/SAWL.csproj"
@@ -3123,7 +3123,7 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "NuGet.CommandLine >= 6.7.0",
-      "SAWL >= 1.0.0.4"
+      "SAWL >= 1.0.0.6"
     ]
   },
   "packageFolders": {
@@ -3139,14 +3139,12 @@
       "outputPath": "D:\\Software\\Codes\\SAWL\\TestProject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\faisa\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\faisa\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -3192,7 +3190,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.2.23502.2\\RuntimeIdentifierGraph.json"
       }
     }
   }

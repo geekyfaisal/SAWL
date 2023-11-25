@@ -5,14 +5,9 @@ using Serilog.Events;
 
 namespace SAWL
 {
-    public class Sawl : ISawl
+    public class SLogger : ISLogger
     {
         private Logger _logger;
-
-        public Sawl()
-        {
-            _logger = Createlogger();
-        }
 
         public Logger Createlogger()
         {
@@ -32,6 +27,40 @@ namespace SAWL
                     storageFileName: $"{config.GetSection("logsettings:FileName").Value}{DateTime.Now.Year}{DateTime.Now.Month}{DateTime.Now.Day}.log",
                     storageContainerName: config.GetSection("logsettings:Storagecontainer").Value
                     ).CreateLogger();
+            //logger.Information("Testing");
+            return logger;
+        }
+
+        public Logger Createlogger(string filename)
+        {
+            //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
+            var builder = new ConfigurationBuilder()
+            .SetBasePath(Directory.GetCurrentDirectory())
+            .AddJsonFile("appsettings.json", optional: false);
+
+            IConfiguration config = builder.Build();
+
+            var logger = new LoggerConfiguration()
+                    .MinimumLevel.Debug()
+                    .MinimumLevel.Override("Microsoft", LogEventLevel.Warning)
+                    .MinimumLevel.Override("Microsoft.Hosting.Lifetime", LogEventLevel.Warning)
+                    .WriteTo.AzureBlobStorage(
+                    config.GetSection("logsettings:SerilogConnection").Value,
+                    storageFileName: $"{filename}{DateTime.Now.Year}{DateTime.Now.Month}{DateTime.Now.Day}.log",
+                    storageContainerName: config.GetSection("logsettings:Storagecontainer").Value
+                    ).CreateLogger();
+            //logger.Information("Testing");
+            return logger;
+        }
+
+        public Logger Createlogger(LoggerConfiguration SConfig)
+        {
+            //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
+            var builder = new ConfigurationBuilder()
+            .SetBasePath(Directory.GetCurrentDirectory())
+            .AddJsonFile("appsettings.json", optional: false);
+            IConfiguration config = builder.Build();
+            var logger = SConfig.CreateLogger();
             //logger.Information("Testing");
             return logger;
         }

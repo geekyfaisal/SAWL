@@ -4,14 +4,17 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Version>1.0.0.4</Version>
+    <Version>1.0.0.6</Version>
     <Title>SAWL</Title>
     <Authors>Faisal Andrabi</Authors>
     <RepositoryUrl>https://github.com/geekyfaisal/SAWL.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <Description>Utility for creating Serilog Azure Blob Logs for COREWCF and other project types.</Description>
-    <PackageProjectUrl>https://github.com/geekyfaisal/SAWL</PackageProjectUrl>
+    <PackageProjectUrl></PackageProjectUrl>
+    <FileVersion>1.0.0.5</FileVersion>
+    <AssemblyVersion>1.0.0.5</AssemblyVersion>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
