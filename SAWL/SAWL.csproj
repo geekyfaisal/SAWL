@@ -4,18 +4,27 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <Version>1.0.0.6</Version>
+    <Version>1.0.0.7</Version>
     <Title>SAWL</Title>
     <Authors>Faisal Andrabi</Authors>
     <RepositoryUrl>https://github.com/geekyfaisal/SAWL.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <Description>Utility for creating Serilog Azure Blob Logs for COREWCF and other project types.</Description>
     <PackageProjectUrl></PackageProjectUrl>
-    <FileVersion>1.0.0.5</FileVersion>
-    <AssemblyVersion>1.0.0.5</AssemblyVersion>
+    <FileVersion>1.0.0.7</FileVersion>
+    <AssemblyVersion>1.0.0.7</AssemblyVersion>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <AnalysisLevel>6.0</AnalysisLevel>
+    <PackageReadmeFile>Readme.md</PackageReadmeFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\Readme.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Serilog.AspNetCore" Version="7.0.0" />

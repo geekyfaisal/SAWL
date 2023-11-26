@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "SAWL/1.0.0.6": {
+      "SAWL/1.0.0.7": {
         "dependencies": {
           "Serilog.AspNetCore": "7.0.0",
           "Serilog.Sinks.AzureBlobStorage": "3.0.3"
@@ -548,7 +548,7 @@
     }
   },
   "libraries": {
-    "SAWL/1.0.0.6": {
+    "SAWL/1.0.0.7": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -5,7 +5,7 @@
   },
   "projects": {
     "D:\\Software\\Codes\\SAWL\\SAWL\\SAWL.csproj": {
-      "version": "1.0.0.6",
+      "version": "1.0.0.7",
       "restore": {
         "projectUniqueName": "D:\\Software\\Codes\\SAWL\\SAWL\\SAWL.csproj",
         "projectName": "SAWL",
@@ -63,7 +63,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.2.23502.2\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

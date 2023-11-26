@@ -6,7 +6,7 @@
     <title>SAWL</title>
     <authors>Faisal Andrabi</authors>
     <description>Utility for creating Serilog Azure Blob Logs for COREWCF and other project types.</description>
-    <repository type="git" url="https://github.com/geekyfaisal/SAWL.git" />
+    <repository type="git" url="https://github.com/geekyfaisal/SAWL.git" commit="468fa0073cb136682cf41e46b1d4553445ad7a7d" />
     <dependencies>
       <group targetFramework="net6.0">
         <dependency id="Serilog.AspNetCore" version="7.0.0" exclude="Build,Analyzers" />
