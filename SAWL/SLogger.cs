@@ -53,6 +53,53 @@ namespace SAWL
             return logger;
         }
 
+        public Logger Createlogger(string filename, bool year, bool month, bool day)
+        {
+            //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
+            var builder = new ConfigurationBuilder()
+            .SetBasePath(Directory.GetCurrentDirectory())
+            .AddJsonFile("appsettings.json", optional: false);
+            string fileNameConvention = "";
+            IConfiguration config = builder.Build();
+            if (!string.IsNullOrEmpty(filename))
+            {
+                fileNameConvention = filename;
+            }
+            else
+            {
+                fileNameConvention = config.GetSection("logsettings:FileName").Value;
+            }
+            if (year)
+            {
+                fileNameConvention += DateTime.Now.Year.ToString();
+            }
+
+            if (year)
+            {
+                fileNameConvention += DateTime.Now.Month;
+            }
+
+            if (day)
+            {
+                fileNameConvention += DateTime.Now.Day;
+            }
+
+
+            fileNameConvention += ".log";
+
+            var logger = new LoggerConfiguration()
+                    .MinimumLevel.Debug()
+                    .MinimumLevel.Override("Microsoft", LogEventLevel.Warning)
+                    .MinimumLevel.Override("Microsoft.Hosting.Lifetime", LogEventLevel.Warning)
+                    .WriteTo.AzureBlobStorage(
+                    config.GetSection("logsettings:SerilogConnection").Value,
+                    storageFileName: fileNameConvention,
+                    storageContainerName: config.GetSection("logsettings:Storagecontainer").Value
+                    ).CreateLogger();
+            //logger.Information("Testing");
+            return logger;
+        }
+
         public Logger Createlogger(LoggerConfiguration SConfig)
         {
             //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

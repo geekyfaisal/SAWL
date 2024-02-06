@@ -10,6 +10,7 @@ namespace TestProject
         public void funtest()
         {
             slog.Createlogger(filename: "wix");
+            
             sawl.Information("Welcome {0}", 1);
             sawl.Debug("Why No Debuging");
         }

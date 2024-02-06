@@ -2,13 +2,12 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>SAWL</id>
-    <version>1.0.0.7</version>
+    <version>1.0.0.8</version>
     <title>SAWL</title>
     <authors>Faisal Andrabi</authors>
     <readme>Readme.md</readme>
     <description>Utility for creating Serilog Azure Blob Logs for COREWCF and other project types.</description>
     <repository type="git" url="https://github.com/geekyfaisal/SAWL.git" commit="ff477ae3b41edc11c31bd7ef7c3bdf2bbcebb430" />
-	<repository url="https://github.com/geekyfaisal/SAWL" />
     <dependencies>
       <group targetFramework="net6.0">
         <dependency id="Serilog.AspNetCore" version="7.0.0" exclude="Build,Analyzers" />
@@ -22,4 +21,3 @@
     <file src="D:\Software\Codes\SAWL\Readme.md" target="\Readme.md" />
   </files>
 </package>
-

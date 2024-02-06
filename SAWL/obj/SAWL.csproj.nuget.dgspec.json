@@ -5,7 +5,7 @@
   },
   "projects": {
     "D:\\Software\\Codes\\SAWL\\SAWL\\SAWL.csproj": {
-      "version": "1.0.0.7",
+      "version": "1.0.0.8",
       "restore": {
         "projectUniqueName": "D:\\Software\\Codes\\SAWL\\SAWL\\SAWL.csproj",
         "projectName": "SAWL",
@@ -14,13 +14,14 @@
         "outputPath": "D:\\Software\\Codes\\SAWL\\SAWL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
+          "D:\\Software\\Codes\\SAWL\\NuGet.Config",
           "C:\\Users\\faisa\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {}
+          "https://nuget.pkg.github.com/geekyfaisal/index.json": {}
         },
         "frameworks": {
           "net6.0": {
@@ -32,6 +33,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -63,7 +69,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200-preview.23624.5\\RuntimeIdentifierGraph.json"
         }
       }
     }
